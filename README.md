@@ -33,16 +33,16 @@ pip install -r requirements.txt
 Make sure your dataset structure as follows:
 
 ```
-coco/
-├── annotations/
-│   ├── instances_train2017.json
-│   └── instances_val2017.json
-├── images/
-│   ├── train2017/
-│   └── val2017/
-└── labels/
-    ├── train2017/
-    └── val2017/
+VisDrone2019/
+├── VisDrone2019-DET-train/
+│   ├── images
+│   └── labels
+├── VisDrone2019-DET-val/
+│   ├── images
+│   └── labels
+└── VisDrone2019-DET-test-dev/
+    ├── images
+    └── labels
 ```
 
 ### 7. Training CALENET
@@ -51,3 +51,4 @@ CUDA_VISIBLE_DEVICES=0 python train.py --weights '' --cfg /models/yolov5s-ELFN-P
 ```
 
 ---
+
